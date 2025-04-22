@@ -1,7 +1,0 @@
-{% for message in app.flashes('mensajes') %}
-    <h3 class="notice">{{ message }}</h3>
-{% endfor %}
-
-{% for error in app.flashes('errores') %}
-    <h3 class="error">{{ error }}</h3>
-{% endfor %}
