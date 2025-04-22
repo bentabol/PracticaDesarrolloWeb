@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <div id="containerEditar">
+  <form id="fichaCliente" action="{{path('editarUsuario', {username: usuario.username})}} " name="formulario2" method="POST">
+    <div class="title">Perfil de usuario</div>
+    {# <div id="alerts" class="alerts" style="display: none">Existen errores en el formulario</div> #}
+    <input type="hidden" value="control">
+
+    <div class="content">
+      <div class="row">
+        <div class="label" style="width:25%;"><label for="username">Username</label></div>
+        <div class="field" style="width:60%;">
+          <input style="width:85%; margin-right:4px;" type="text" id="editUsuario" name="username" value="{{ usuario.username }}" placeholder="{{ usuario.username }}" disabled />
+          <span id="username_help" class="help"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label" style="width:25%;"><label for="email">Email</label></div>
+        <div class="field" style="width:60%;">
+          <input style="width:85%; margin-right:4px;" type="text" id="email2" name="email" value="{{ usuario.c_email }}" placeholder="{{ usuario.c_email }}" />
+          <img style="width:8%;" id="editarEmail" width="100%" heigth="100%" src="/practicaAvance4/public/images/editar.png">
+          <span id="email_help" class="help"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label" style="width:25%;"><label for="nombre">Nombre</label></div>
+        <div class="field" style="width:60%;">
+          <input style="width:85%; margin-right:4px;" type="text" id="nombre2" name="nombre" value="{{usuario.c_nombre}}" placeholder="{{usuario.c_nombre}}"  />
+          <img style="width:8%;" id="editarNombre" width="100%" heigth="100%" src="/practicaAvance4/public/images/editar.png">
+          <span id="nombre_help" class="help"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label" style="width:25%;"><label for="apellidos">Apellidos</label></div>
+        <div class="field" style="width:60%;">
+          <input style="width:85%; margin-right:4px;" type="text" id="apellidos2" name="apellidos" value="{{usuario.c_apellidos}}" placeholder="{{usuario.c_apellidos}}"  />
+          <img style="width:8%;" id="editarApellidos" width="100%" heigth="100%" src="/practicaAvance4/public/images/editar.png">
+          <span id="apellidos_help" class="help"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label" style="width:25%;"><label for="password2">Contraseña</label></div>
+        <div class="field" style="width:60%;">
+          <input style="width:85%; margin-right:4px;" class="field" type="password2" id="password2" name="password" value="{{usuario.password}}" placeholder="{{usuario.password}}"  />
+          <img style="width:8%;" id="editarPassword" width="100%" heigth="100%" src="/practicaAvance4/public/images/editar.png">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" id="btEnviarVerde" name="btEnviar">Enviar</button>
+      <button type="reset" id="btClear" name="btClear">Borrar</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

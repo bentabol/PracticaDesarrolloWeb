@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<style>
+   .InformesUser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+        background-color: #9999FF;
+        border-radius: 5px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .button {
+        background-color: pink;
+    }
+</style>
+
+<div class="InformesUser">
+    <div class="Apps2">
+        <div class="navApps2">
+        </div>
+        <div class="bodyApps2">
+            <div class="topApps2">
+                <br></br>
+                  <h2>Solicitudes Pendientes</h2>
+                <table style="text-align:center">
+                    <thead>
+                        <tr>
+                            <th>PROYECTO</th>
+                            <th>USUARIO</th>
+                            <th>ACCION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for solicitud in solicitudes %}
+                            <tr>
+                                <td>{{solicitud.proyecto.c_nombreProyecto}}</td>
+                                <td>{{solicitud.usuario.username}}</td>
+                                <td>
+                                    <form name='nameForm' action='{{path("solicitud-aceptar-gestor")}}' method='post'>
+                                        <input type='hidden' name='proyecto' value="{{solicitud.proyecto.id_proyecto}}"/>
+                                        <input type='hidden' name='usuario' value="{{solicitud.usuario.id_usuario}}"/>
+                                        <button type='submit' id='btEnviar' name='btAceptar'>Aceptar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
