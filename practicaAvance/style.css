@@ -1,0 +1,669 @@
+.contenidoPagina {
+    border: solid 1px #E6E2DD;
+    background-color: #011526;
+}
+
+
+.barra {
+    font-size: 15px;
+}
+
+.divisores {
+    display: inline-block;
+    float: right;
+}
+
+.principal {
+    text-align: left;
+    width: 70%;
+    display: inline;
+    margin-left: 5px;
+}
+
+.nombrePagina {
+    margin-left: 10px;
+}
+
+.buscador {
+    text-align: right;
+    width: 10%;
+    display: inline-block;
+}
+
+.botones {
+    padding-top: 20px;
+    display: inline;
+    text-decoration: none;
+    margin-bottom: 5px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.botones:hover {
+    border-style: none none solid none;
+    text-decoration: none;
+    border-color: white white #8E9597 white;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+/*Parte Carusel*/
+.carousel {
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#imagen {
+    width: 85%;
+    height: 500px;
+    background-size: cover;
+}
+
+.botonCarusel {
+    height: 100px;
+    margin-top: 150px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px
+}
+
+.botonCarusel2 {
+    height: 100px;
+    width: 90px;
+    margin-top: 150px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+/*dropdown*/
+.dropbtn {
+    background-color: #011526;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f8fb;
+    width: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #9999FF;
+}
+
+.filtrado {
+    width: 30px;
+    height: 30px;
+}
+
+.tabulacion {
+    margin-left: 15px;
+}
+
+.botonFiltro {
+    width: 40px;
+    height: 40px;
+}
+
+/*Parte Pie de PAgina*/
+.finalPagina {
+    color: black;
+    width: 100%;
+    background-color: #5379b3;
+}
+
+.textoFinal {
+    background-color: #5379b3;
+    color: darkslategray;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.informacionEnlacesFinal {
+    color: gray;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: ##5379b3;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.informacionEnlacesFinal li {
+
+    text-decoration: none;
+    background-color: #5379b3;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.botonesFinal {
+    color: black;
+    display: inline;
+    text-decoration: none;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.botonesFinal:hover {
+    color: black;
+    border-style: none none solid none;
+    text-decoration: none;
+    border-color: white white #9999FF white;
+
+}
+
+/*Parte de infoPagina web*/
+.infoNosotros {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    background-color: #CCCCFF;
+}
+
+.infoNosotros h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: black;
+}
+
+.infoWEB {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: darkslategray;
+    font-size: 13px;
+}
+
+/* Formulario registro */
+#container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#container div {
+    padding: 5px 5px;
+    
+}
+
+#container .title {
+    background-color: #011526;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#container .alerts {
+    color: red;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#containerEditar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    background-color: #9999FF;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#containerEditar div {
+    padding: 5px 5px;
+    
+}
+
+#containerEditar .title {
+    background-color: #011526;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#containerEditar .alerts {
+    color: red;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#containerLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    background-color: #9999FF;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#containerLogin div {
+    padding: 5px 5px;
+    
+}
+
+#containerLogin .title {
+    background-color: #011526;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#containerLogin .alerts {
+    color: red;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#containerRegistrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    background-color: #9999FF;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#containerRegistrar div {
+    padding: 5px 5px;
+    
+}
+
+#containerRegistrar .title {
+    background-color: #011526;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#containerRegistrar .alerts {
+    color: red;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#containerRecuperarContra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    background-color: #9999FF;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#containerRecuperarContra div {
+    padding: 5px 5px;
+    
+}
+
+#containerRecuperarContra .title {
+    background-color: #011526;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#containerRecuperarContra .alerts {
+    color: red;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.row div {
+    display: inline-block;
+}
+
+.label {
+    width: 150px;
+    
+}
+
+#btEnviar {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btEnviar2 {
+    display:none;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btEnviarProyecto {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btEditarProyecto {
+    border: none;
+    background-color: rgb(255, 213, 5);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btEnviarTarea {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btEditarTarea {
+    border: none;
+    background-color: rgb(255, 213, 5);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+
+#btEditar {
+    border: none;
+    background-color: rgb(255, 213, 5);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+#btClear {
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 10px
+}
+
+/*		.errorLabel { color: red; }*/
+.errorField {
+    color: red;
+    border: solid 1x red;
+    background-color: LightSalmon;
+}
+
+.good {   
+    color: black; 
+    border: solid 1x  rgb(0, 255, 38);;
+    background-color: rgb(160, 255, 122);
+}
+
+.help {
+    color: red;
+    background-color: cornsilk;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.row label {
+    display: inline-block;
+    min-width: 120px;
+}
+
+.fondo {
+    background-color: #CCCCFF;
+}
+
+.vipPane {
+    border: solid 1px;
+}
+
+.catalogo {
+    padding: 5%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+
+}
+
+.navApps {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.tituloCatalogo {
+    margin-right: auto;
+
+}
+
+.logoAPP {
+    width: 100px;
+    height: 100px;
+}
+
+.logoAppTOP {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+}
+
+.Apps {
+    background-color: #5379b3;
+    max-width: 900px;
+    min-width: 55%;    
+    border: solid 1px black;
+}
+
+.topApps {
+    background-color: #5379b3;
+    width: 20%;
+    height: 900px;
+    right: 2%;
+    border: solid 1px black;
+}
+
+.bodyApps {
+    padding: 2% 5%
+}
+
+
+.descripcion {
+    border: solid 2px;
+    width: 350px;
+    padding: 5px;
+}
+
+.nombreTopApp {
+    border: solid 1px;
+    width: 90px;
+    padding: 5px;
+}
+
+
+.btnComprar {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 40px;
+    background-color: rgb(56, 214, 82);
+
+}
+
+.btnComprar:hover {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 40px;
+    background-color: lime;
+}
+
+.btnComprar a {
+    text-decoration: none;
+}
+
+.btnComprarTOP {
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0 20px;
+    background-color: rgb(56, 214, 82);
+    font-size: 10px;
+
+}
+
+.btnComprarTOP:hover {
+    border-radius: 10px;
+    background-color: lime;
+}
+
+.btnComprarTOP a {
+    text-decoration: none;
+}
+
+/*Valoracion estrellas*/
+.ec-stars-wrapper {
+    font-size: 0;
+    /* Podríamos quitarlo, pero de esta manera (siempre que no le demos padding), 
+  sólo aplicará la regla .ec-stars-wrapper:hover a cuando también se esté haciendo hover a alguna estrella */
+    display: inline-block;
+}
+
+.ec-stars-wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    /* Volver a dar tamaño al texto */
+    font-size: 12px;
+    font-size: 1rem;
+    color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+    color: rgb(39, 130, 228);
+}
+
+.ec-stars-wrapper>a:hover~a {
+    color: #888;
+}
+
+/*Valoracion estrellas top APPS*/
+.ec-stars-wrapperTOP {
+    font-size: 0;
+    /* Podríamos quitarlo, pero de esta manera (siempre que no le demos padding), 
+  sólo aplicará la regla .ec-stars-wrapper:hover a cuando también se esté haciendo hover a alguna estrella */
+    display: inline-block;
+}
+
+.ec-stars-wrapperTOP a {
+    text-decoration: none;
+    display: inline-block;
+    /* Volver a dar tamaño al texto */
+    font-size: 12px;
+    font-size: 1rem;
+    color: rgb(39, 130, 228);
+    padding-top: 1px;
+}
+
+.precios {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 10px;
+    padding-left: 10px;
+    display: inline;
+}
+
+.textoINFORMACION{
+    margin-top: 100px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+}
+
+#inputCatpcha{
+    width: 20%;
+}
+
+#catpcha p.catpcha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.sumaCatpcha{
+    padding-bottom:16px;
+    margin-left:8px;
+}
+
+.Catpcha{
+    
+    margin-right:8px;
+}
+
+
