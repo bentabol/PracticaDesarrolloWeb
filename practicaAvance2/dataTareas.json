@@ -1,0 +1,38 @@
+[
+    {
+        "tareaId": "",
+        "tareaNombre": "pruebaTarea",
+        "tareaDescripcion": "prueba",
+        "tareaResponsable": "prueba",
+        "tareaInicio": "2001-12-02",
+        "tareaFin": "2025-12-01",
+        "tareaEstado": "Progreso"
+    },
+    {
+        "tareaId": "",
+        "tareaNombre": "tareaPendiente",
+        "tareaDescripcion": "prueba",
+        "tareaResponsable": "prueba",
+        "tareaInicio": "2005-12-12",
+        "tareaFin": "2025-12-12",
+        "tareaEstado": "Progreso"
+    },
+    {
+        "tareaId": "",
+        "tareaNombre": "pruebaPendiente2",
+        "tareaDescripcion": "prueba",
+        "tareaResponsable": "prueba",
+        "tareaInicio": "2001-12-11",
+        "tareaFin": "2025-12-12",
+        "tareaEstado": "Pendiente"
+    },
+    {
+        "tareaId": "",
+        "tareaNombre": "pruebaCompleta",
+        "tareaDescripcion": "prueba",
+        "tareaResponsable": "prueba",
+        "tareaInicio": "2000-12-12",
+        "tareaFin": "2001-12-12",
+        "tareaEstado": "Completa"
+    }
+]

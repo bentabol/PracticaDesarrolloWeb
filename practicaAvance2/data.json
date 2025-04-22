@@ -1,0 +1,52 @@
+{
+    "0": {
+        "username": "bentabol",
+        "email": "guillermobentabol@gmail.com",
+        "nombre": "guillermo",
+        "apellidos": "bentabol garcia",
+        "password": "Prueba123",
+        "rango": "Participante"
+    },
+    "1": {
+        "username": "bentabol2",
+        "email": "guillermobentabol2@gmail.com",
+        "nombre": "guillerma",
+        "apellidos": "bentabol2 garcia2",
+        "password": "Prueba1232",
+        "rango": "Gestor"
+    },
+    "2": {
+        "username": "guillermo",
+        "email": "guillermo@gmai.com",
+        "nombre": "guillermo",
+        "apellidos": "guillermo",
+        "password": "Guillermo12345",
+        "rango": "Gestor"
+    },
+    "3": {
+        "username": "guillermo1234",
+        "email": "guillermo@gmail.com",
+        "nombre": "guillermoben",
+        "apellidos": "guillermo123",
+        "password": "Guillermo12345",
+        "rango": "Gestor"
+    },
+    "8": {
+        "username": "prueba",
+        "email": "prueba@gmail.com",
+        "nombre": "prueba2",
+        "apellidos": "prueba",
+        "password": "Prueba12345",
+        "rango": "Cliente"
+    },
+    "9": {
+        "username": "prueba2",
+        "email": "prueba2@gmail.com",
+        "nombre": "prueba",
+        "apellidos": "pruebaApellidos",
+        "password": "Prueba12345",
+        "rango": "Administrador"
+    },
+    "10": null,
+    "11": null
+}
