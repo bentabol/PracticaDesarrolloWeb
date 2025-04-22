@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<style>
+   .InformesUser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+        background-color: #9999FF;
+        border-radius: 5px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+         width: 80%;
+    }
+    .informes {
+        text-align: center;
+    }
+</style>
+
+<div class="InformesUser">
+    <div>
+        <div>
+            <div class="topApps3">
+                <br></br>
+                <h2>Mis Proyectos</h2>
+               <table style="text-align:center" class='informes' id="tblProyectos">
+                    <thead>
+                        <tr>
+                          <th>NOMBRE PROYECTO</th>
+                          <th>DESCRIPCION PROYECTO</th>
+                          <th>FECHA INICIO</th>
+                          <th>FECHA FIN</th>
+                          <th>ACTIVO</th>
+                          <th>TAMAÑO DE PROYECTO(MB)</th>
+                          <th>ARCHIVO DE PROYECTO</th>
+                          <th>GESTOR</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for proyecto in proyectos %}
+                    
+                        <tr>   
+                            <td>{{proyecto.c_nombreProyecto}}</td>
+                            <td>{{proyecto.c_descripcionProyecto}}</td>
+                            <td>{{proyecto.f_fechaInicioProyecto|date('Y-m-d')}}</td>
+                            <td>{{proyecto.f_fechaFinProyecto|date('Y-m-d')}}</td>
+                            <td>{{proyecto.i_activoProyecto ? 'Sí': 'No'}}</td>
+                            <td>{{proyecto.c_tamanioArchivo}}</td>
+                            <td>{{proyecto.usuario.username}}</td>
+                            <td>
+                                <div>
+                                    <form name='nameForm' action='{{path("descargar-fichero", {id: proyecto.id_proyecto})}}' method='post'>
+                                        <button type='submit' id='btEnviar' name='btDescargar'>Descargar</button>
+                                    </form>  
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
