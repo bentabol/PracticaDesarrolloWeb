@@ -1,0 +1,28 @@
+security:
+    enable_authenticator_manager: true
+    password_hashers:
+        App\Entity\Usuario: 
+            algorithm: plaintext
+    providers:
+        db_user_provider:
+            entity:
+                class: App\Entity\Usuario
+                # property: username
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            lazy: true
+            provider: db_user_provider
+            form_login:
+                login_path: showLogin
+                check_path: showLogin
+                default_target_path: home
+            logout:
+                path: logout
+                target: /
+    role_hierarchy:
+        ROLE_GESTOR: ROLE_CLIENTE
+        ROLE_ADMIN:  ROLE_GESTOR
+
